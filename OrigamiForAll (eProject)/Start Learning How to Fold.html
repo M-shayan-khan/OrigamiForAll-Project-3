@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origami Beginner’s Guide - OrigamiForAll</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        background-color: rgb(255, 245, 235);
+    }
+
+    .main {
+        font-family: "Marcellus", serif;
+        color: black;
+        text-align: justify;
+    }
+
+    .main h2 {
+        color: #a11321;
+        margin-top: 80px;
+    }
+
+    .main .p1,
+    .main .p2 {
+        text-align: justify;
+    }
+
+    .image-01 img { 
+        max-width: 350px;
+        height: auto;
+        margin: 80px 30px 0 30px;
+        border: 3px solid #a11321;
+    }
+
+    div .p1, div .p2 {
+        margin-top: 20px;
+        max-width: 320px;
+        margin-left: 98px;
+        color: black;
+    }
+
+    .note {
+        border: 2px solid #a11321;
+        border-radius: 20px;
+        line-height: 40px;
+    }
+
+    .h2-1 {
+        font-size: 1.4rem;
+    }
+
+    @media (min-width: 1200px) {
+        div .p1, div .p2 {
+            margin-left: 200px;
+        }
+
+        .image-01 img {
+            margin-left: 55px;
+            margin-right: 108px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        div .p1, div .p2 {
+            font-size: 1.2rem;
+            width: 225px;
+            margin-left: 82px;
+
+        }
+
+        .image-01 img {
+            width: 255px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        
+        
+        div .p1, div .p2 {
+            font-size: 1rem;
+            width: 150px;
+            margin-left: 60px;
+            margin-right: 35px;
+
+        }
+
+        .image-01 img {
+            width: 180px;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="brand-name me-auto" href="#"><span class="origami">Origami</span>ForAll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 pe-2 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html" target="_blank">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Diagrams</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="Login In(email).html" class="login-btn text-decoration-none">Login</a>
+            <a href="Sign Up.html" class="signUp-btn text-decoration-none">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="main container-fluid">
+        <div class="container">
+            <h2 class="fw-bold">Origami Beginner’s Guide</h2>
+            <p class="h2-1 mt-4">Origami is actually a very easy hobby to pick up, and it’s a lot of fun. All you need
+                is
+                paper, and you can use pretty much any paper you can find. This guide will show you the main folds, the
+                basic bases that are used as the foundation for a huge number of different models, and then you’ll learn
+                how to fold your first model, the traditional paper crane.</p>
+
+            <h2 class="fw-bold">Start With the Basics: The Mountain and Valley Folds</h2>
+            <p class="h2-1 mt-4">These are the two basic folds in origami for beginners. Pretty much every fold is
+                either a mountain fold, a valley fold, or a combination of the two.</p>
+
+
+            <div class="image-01 container text-center">
+                <img src="./images/mountain-fold-1-1024x1024.webp" alt="">
+                <img src="./images/valley-fold-1-1024x1024.webp" alt="">
+            </div>
+            <div class="para-01 text-center d-flex">
+                <p class="p1">With a <strong>Mountain Fold</strong>, the crease bends the paper down, and the crease
+                    resembles a mountain.</p>
+                <p class="p2">With a <strong>Valley Fold</strong>, the crease bends the paper up, and the crease
+                    resembles a
+                    valley.</p>
+            </div>
+
+            <h2 class="fw-bold">Common Origami Folds</h2>
+            <p class="h2-1 mt-4">Here are the most common folds with step-by-step instructions on how to make them.
+                These
+                folds might not look exactly the same as they do in these examples all the time when you’re folding
+                other
+                models. However, these examples should show you how they work so you can figure out what you’re supposed
+                to
+                do when you’re following diagrams.</p>
+            <div class="note p-4 mt-5">
+                <p class="mt-2"><strong>📜 Note:</strong> These diagrams are intentionally exaggerated and distorted to
+                    show as many flaps of paper as possible and make them easier to follow. When you fold origami models
+                    on your own almost all the time, you’ll need to crease each fold very well and press everything
+                    completely flat.</p>
+            </div>
+            <h2 class="fw-bold">Inside Reverse Fold</h2>
+            <p class="h2-1 mt-4">This is a very common fold in origami where the paper is folded inside of the model.
+            </p>
+
+            <div class="image-01 container text-center">
+                <img src="./images/inside-reverse-fold-1-min.webp" alt="">
+                <img src="./images/inside-reverse-fold-2-min.webp" alt="">
+            </div>
+            <div class="para-01 text-center d-flex">
+                <p class="p1"><strong>Step 01: </strong>Start with a square of paper, white side up, and fold it in half
+                    diagonally. This isn’t actually part of the Inside Reverse Fold, but it’ll give you a shape that you
+                    can use to make the Inside Reverse Fold on.</p>
+                <p class="p2"><strong>Step 02: </strong>Fold along the dotted line. This is where you’re going to make
+                    the inside reverse fold. Your fold doesn’t have to match the exact position of the line, so don’t
+                    worry if it doesn’t measure up exactly.</p>
+            </div>
+
+            <div class="image-01 container text-center">
+                <img src="./images/inside-reverse-fold-3-min.webp" alt="">
+                <img src="./images/inside-reverse-fold-4-min.webp" alt="">
+            </div>
+            <div class="para-01 text-center d-flex">
+                <p class="p1"><strong>Step 03: </strong>Crease this fold well and then unfold it.</p>
+                <p class="p2"><strong>Step 04: </strong>Turn the paper over.</p>
+            </div>
+
+            <div class="image-01 container text-center">
+                <img src="./images/inside-reverse-fold-5-min.webp" alt="">
+                <img src="./images/inside-reverse-fold-6-min.webp" alt="">
+            </div>
+            <div class="para-01 text-center d-flex">
+                <p class="p1"><strong>Step 05: </strong>Make a fold along the dotted line. This will be the opposite
+                    side of the fold you made earlier. Now you’re folding this the other way.</p>
+                <p class="p2"><strong>Step 06: </strong>Crease this fold well and then unfold it.</p>
+            </div>
+
+            <div class="image-01 container text-center">
+                <img src="./images/inside-reverse-fold-7-min.webp" alt="">
+                <img src="./images/inside-reverse-fold-8-min.webp" alt="">
+            </div>
+            <div class="para-01 text-center d-flex">
+                <p class="p1"><strong>Step 07: </strong>Turn the paper over again so it’s back the way it was before.
+                </p>
+                <p class="p2"><strong>Step 08: </strong>Push the paper inside the model following the two folds you made
+                    before.</p>
+            </div>
+
+            <div class="image-01 container text-center">
+                <img src="./images/inside-reverse-fold-9-min.webp" alt="">
+                <img src="./images/inside-reverse-fold-10-min.webp" alt="">
+            </div>
+            <div class="para-01 text-center d-flex">
+                <p class="p1"><strong>Step 09: </strong>Turn the paper over again so it’s back the way it was before.
+                </p>
+                <p class="p2"><strong>The complete Inside Reverse Fold. </strong>The dotted line shows the path of the
+                    paper inside the model.</p>
+            </div>
+
+            <h2 class="fw-bold">Looking for Even More Origami Instructions?</h2>
+            <p class="h2-1 mt-4">We have an absolutely massive database of easy origami diagrams. If you’ve successfully
+                understood all the techniques on this page, you should have no trouble folding anything that’s either
+                Beginner or Easy level difficulty.</p>
+            <p class="h2-1 mt-4">If you prefer video instructions, we have a giant database of those, too. Video
+                instructions can be especially helpful as you can see exactly how the paper moves between each step.</p>
+            <p class="h2-1 mt-4">Instructions for the best origami models can only be found in books. If you’re still
+                looking for more awesome things to fold, check out our list of best origami books. We’ve written reviews
+                and made lists of the models you’ll find in each one. No matter what you’re looking for, you’ll
+                definitely find some cool things to fold.</p>
+        </div>
+    </div>
+
+    <footer class="d-flex justify-content-center">
+
+        <ul class="social-links d-flex flex-wrap">
+            <li><a href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="http://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="http://tiktok.com/"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+        </ul>
+
+        <ul class="menu d-flex flex-wrap">
+            <li><a href="About Us.html" target="_blank">About Us</a></li>
+            <li><a href="Contact Us.html" target="_blank">Contact Us</a></li>
+            <li><a href="Private Policy.html" target="_blank">Privacy Policy</a></li>
+        </ul>
+
+        <p class="ps-4">© 2024-2025 OrigamiForAll, All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+<script sc="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - OrigamiForAll</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(255, 245, 235);
+
+        }
+
+        .contact-container {
+            width: 100% !important;
+            max-width: 400px;
+            font-family: "Marcellus", serif;
+            margin: 50px auto;
+            background: rgb(255, 245, 235);
+            padding: 30px;
+            border-radius: 10px;
+            margin: auto;
+            margin-block: 30px;
+            width: min(300px, 90vw);
+            text-align: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: black;
+        }
+
+        .contact-container h1 {
+            color: #a11321;
+            font-size: 2.5rem;
+        }
+        
+        .social-names a {
+            text-decoration: none;
+            color: #494949;
+        }
+
+        .social-names a:hover {
+            font-weight: bold;
+            color: #a11321;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            all: unset;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 10px 30px #0005;
+            border: 1px solid #71717188;
+            transition: 0.3s;
+            width: 90% !important;
+        }
+
+        form textarea:hover {
+            border-color: #a11321;
+        }
+
+        .submit-btn {
+            background-color: #a11321;
+            color: white;
+        }
+
+        .submit-btn:hover {
+            background-color: #d33d4c;
+            color: white;
+        }
+
+        input:invalid:not(:placeholder-shown) {
+            border-color: red;
+            background-image: url(./images/checked_red.png);
+        }
+
+        input:valid:not(:placeholder-shown) {
+            background-image: url(./images/checked_green.png);
+        }
+
+        input:invalid:not(:placeholder-shown),
+        input:valid:not(:placeholder-shown) {
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: calc(100% - 10px);
+        }
+
+        input:invalid~button[type="submit"] {
+            opacity: .6;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="brand-name me-auto" href="#"><span class="origami">Origami</span>ForAll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 pe-2 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html" target="_blank">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Diagrams</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="login-btn text-decoration-none">Login</a>
+            <a href="Sign Up.html" class="signUp-btn text-decoration-none">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="contact-container">
+            <h1 class="fw-bold">Contact Us</h1>
+            <p class="fw-bold mb-5 fs-5">We’d love to hear from you! Fill out the form below or reach us via email or
+                phone.</p>
+
+            <div class="mb-3">
+                <p><strong>Email:</strong> <a href="mailto:support@origamiforall.com"
+                        class="text-dark">support@origamiforall.com</a></p>
+                <p><strong>Phone:</strong> +92 334 0225411</p>
+            </div>
+
+            <p class="mt-5 fs-4"><strong>Follow us:</strong></p>
+            <div class="social-names mb-3">
+                <a href="#" class="pe-3">Facebook</a>
+                <a href="#" class="pe-3">Instagram</a>
+                <a href="#" class="pe-3">Twitter</a>
+                <a href="#" class="">Pinterest</a>
+            </div>
+
+            <form action="">
+
+                <input type="email" name="email" placeholder="Your email" required>
+
+                <textarea class="" id="comments" rows="3" placeholder="Your Message..."></textarea>
+    
+                <button type="submit" class="submit-btn text-center mt-4">Submit Feedback</button>
+    
+            </form>
+        </div>
+    </div>
+
+    <footer class="d-flex justify-content-center">
+
+        <ul class="social-links d-flex flex-wrap">
+            <li><a href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="http://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="http://tiktok.com/"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+        </ul>
+
+        <ul class="menu d-flex flex-wrap">
+            <li><a href="About Us.html" target="_blank">About Us</a></li>
+            <li><a href="Contact Us.html" target="_blank">Contact Us</a></li>
+            <li><a href="Private Policy.html" target="_blank">Privacy Policy</a></li>
+        </ul>
+
+        <p class="ps-4">© 2024-2025 OrigamiForAll, All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

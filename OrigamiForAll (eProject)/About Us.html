@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Origami World</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #fff5eb;
+        }
+
+        .about-section {
+            padding: 60px 0;
+            text-align: center;
+            font-family: "Marcellus", serif;
+            color: black;
+        }
+
+        .about-section h1,
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: #a11321;
+        }
+
+        .about-section p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .brand-name2 {
+            font-family: "Pacifico", serif;
+            color: #4a1b00;
+            font-weight: 500;
+            font-size: 20px;
+            text-decoration: none;
+            width: 100%;
+        }
+
+        .profile-pic {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            box-shadow: 0 10px 30px #0005;
+        }
+
+        @media (max-width: 768px) {
+
+            .about-section h1,
+            .about-section h2 {
+                font-size: 2rem;
+            }
+
+            .about-section p {
+                font-size: 1.2rem;
+            }
+
+            .brand-name2 {
+                font-size: 17px;
+            }
+
+            .profile-pic {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            .about-section h1,
+            .about-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .about-section p {
+                font-size: 1rem;
+                width: 80%;
+            }
+
+            .brand-name2 {
+                font-size: 17px;
+            }
+
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="brand-name me-auto" href="#"><span class="origami">Origami</span>ForAll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 pe-2 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html" target="_blank">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Diagrams</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="login-btn text-decoration-none">Login</a>
+            <a href="Sign Up.html" class="signUp-btn text-decoration-none">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="about-section">
+            <h2 class="fw-bold">About Us</h2>
+            <p class="">Welcome to <a class="brand-name2" href="#"><span class="origami">Origami</span>ForAll</a>, a
+                place
+                where the
+                ancient art of paper folding meets modern creativity. Our mission is to inspire, educate, and share the
+                beauty of origami with enthusiasts of all skill levels. Whether you're a beginner or an expert, we have
+                something for everyone!</p>
+            <p class="mb-5">Join us on this journey as we explore intricate folds, amazing designs, and the endless
+                possibilities of
+                origami.</p>
+
+            <hr>
+
+            <div class="container">
+                <img src="./images/Untitled design.png" alt="Your Photo" class="profile-pic mt-5">
+                <h1 class="fw-bold mt-3">- Shayan Khan -</h1>
+                <p>Hi, I'm Shayan. I'm a passionate web developer, designer, and content creator. I love creating
+                    beautiful and functional websites. Welcome to my page!</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="d-flex justify-content-center">
+
+        <ul class="social-links d-flex flex-wrap">
+            <li><a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="http://twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="http://tiktok.com/" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+        </ul>
+
+        <ul class="menu d-flex flex-wrap">
+            <li><a href="About Us.html" target="_blank">About Us</a></li>
+            <li><a href="Contact Us.html" target="_blank">Contact Us</a></li>
+            <li><a href="Private Policy.html" target="_blank">Privacy Policy</a></li>
+        </ul>
+
+        <p class="ps-4">© 2024-2025 OrigamiForAll, All Rights Reserved.</p>
+
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
