@@ -309,10 +309,13 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="feedback.html" target="_blank">Feedback</a>
+                            <a class="nav-link" href="feedback.html">Feedback</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Categories page.html" target="_blank">Gallery</a>
+                            <a class="nav-link" href="Categories page.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact Us.html" target="_blank">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -337,7 +340,7 @@
             <input type="password" name="password" placeholder="Password" minlength="6" required>
             <p class="text-center">Password must be at least 6 characters</p>
 
-            <button type="submit">Sign in</button>
+            <button onclick="showAlert()" type="submit">Sign in</button>
 
             <p class="">Sign in using magic link</p>
             <div class="or mb-3">or</div>
@@ -363,13 +366,20 @@
 
         <ul class="menu d-flex flex-wrap">
             <li><a href="About Us.html" target="_blank">About Us</a></li>
-            <li><a href="Contact Us.html" target="_blank">Contact Us</a></li>
             <li><a href="Private Policy.html" target="_blank">Privacy Policy</a></li>
         </ul>
 
         <p class="ps-4">© 2024-2025 OrigamiForAll, All Rights Reserved.</p>
 
     </footer>
+
+    <script>
+        
+        function showAlert() {
+            alert("Welcome back! You have logged in successfully.");
+        }
+
+    </script>
 
 </body>
 <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -4,11 +4,57 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(255, 245, 235);
 }
 
 /* Navbar */
+
+.drop-down {
+    list-style: none;
+    background-color: #a11321;
+    margin-top: 5px;
+}
+
+.drop-down li {
+    display: inline-block;
+    position: relative;
+}
+
+.drop-down li a {
+    display: block;
+    padding: 10px 5px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    width: 80%;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.drop-down li a:hover {
+    transform: scale(1.2);
+} 
+
+ul li ul.drop-down li {
+    display: block;
+}
+
+ul li ul.drop-down {
+    width:35%;
+    background-color: #a11321;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li:hover ul.drop-down {
+    display: block;
+}
 
 .origami {
     color: #a11321;
@@ -64,8 +110,9 @@ body {
 .nav-link {
     color: #4a1b00;
     font-weight: 500;
-    margin: 0 10px;
+    margin: 0 4px;
     transition: 0.3s;
+    font-size: 1rem;
 }
 
 .login-btn:hover,
