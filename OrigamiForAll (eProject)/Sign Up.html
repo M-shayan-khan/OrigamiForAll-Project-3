@@ -76,15 +76,25 @@
 
         }
 
-        .container {
-            max-width: 400px;
+        form * {
+            width: 100% !important;
+        }
+
+        form {
+            max-width: 750px;
             font-family: "Marcellus", serif;
+            margin: 50px auto;
             background: rgb(255, 245, 235);
-            padding: 10px 0;
+            padding: 30px;
             border-radius: 10px;
+            display: flex;
+            margin: auto;
+            margin-block: 30px;
+            width: min(300px, 90vw);
+            gap: 15px;
+            flex-wrap: wrap;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            margin-top: 50px;
-            margin-bottom: 50px;
+            color: black;
         }
 
         h1 {
@@ -92,17 +102,6 @@
             color: #a11321;
             font-size: x-large;
             font-family: "Marcellus", serif;
-        }
-
-        form {
-            display: flex;
-            margin: auto;
-            margin-block: 30px;
-            width: min(300px, 90vw);
-            gap: 15px;
-            flex-wrap: wrap;
-            font-family: "Marcellus", serif;
-            color: black;
         }
 
         form input,
@@ -114,10 +113,8 @@
             box-shadow: 0 10px 30px #0005;
             border: 1px solid #71717188;
             transition: background-image 0.5s, opacity .5s, border .5s;
-        }
-
-        form * {
-            width: 100% !important;
+            max-width: 500px;
+            margin: 10px 0;
         }
 
         form input {
@@ -309,24 +306,23 @@
     </nav>
 
 
-    <div class="container">
-        <header>
-            <div class="logo mt-2 mb-3">
+    <div class="container mt-5">
+        <form class="form-section text-center w-75 m-auto justify-content-center" action="Sign Up.html">
+            <div class="logo mt-2 mb-1">
                 <a class="brand-name" href="index.html"><span class="origami">Origami</span>ForAll</a>
             </div>
-            <h1 class="mb-3">Create your account</h1>
+            <h1 class="mb-3 fs-2">Create your account</h1>
             <p>Already have an account? <a href="Login In(email).html" class="text-decoration-none">Log in</a></p>
-        </header>
-        <form action="Sign Up.html">
-            <input type="email" name="email" placeholder="Your email" required>
-            <input type="tel" name="phone" placeholder="Your phone number" pattern="[0-9]{10,15}" required>
+        
+            <input type="email" name="email" placeholder="Your email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+            <input type="tel" name="phone" placeholder="Your phone number" pattern="[0-9]{10,15}"  maxlength="11">
             <input type="password" id="password" name="password" placeholder="Password" minlength="6" required>
             <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password"
                 minlength="6" required onkeyup="validatePassword()">
-            <p id="error-message" class="error">Passwords do not match!</p>
-            <p class="text-center">Password must be at least 6 characters</p>
+            <p id="error-message" class="error fs-6">Passwords do not match!</p>
+            <p class="text-center fs-6">Password must be at least 6 characters</p>
             <button onclick="showAlert()" type="submit" id="submit-btn">Sign Up</button>
-            <p>By signing up, you agree to our <a href="Private Policy.html" class="text-decoration-none fw-bold">Terms
+            <p class="fs-6 mt-3 w-75">By signing up, you agree to our <a href="Private Policy.html" class="text-decoration-none fw-bold">Terms
                     of Service</a> and <a href="Private Policy.html" class="text-decoration-none fw-bold">Privacy
                     Policy</a>.</p>
         </form>
@@ -354,7 +350,7 @@
     <script>
         
         function showAlert() {
-            alert("Success! Your account has been registered.");
+            alert("✅ Signup Successful!");
         }
 
     </script>

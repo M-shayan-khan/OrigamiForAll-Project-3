@@ -78,22 +78,30 @@
 
         }
 
-        .container {
-            max-width: 400px;
+        form * {
+            width: 100% !important;
+        }
+
+        form {
+            max-width: 750px;
             font-family: "Marcellus", serif;
+            margin: 50px auto;
             background: rgb(255, 245, 235);
-            padding: 0px 0;
+            padding: 30px;
             border-radius: 10px;
+            display: flex;
+            margin: auto;
+            margin-block: 30px;
+            width: min(300px, 90vw);
+            gap: 15px;
+            flex-wrap: wrap;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            margin-top: 50px;
-            margin-bottom: 50px;
-            padding: 10px 0;
+            color: black;
         }
 
         h1 {
             font-weight: bold;
             color: #a11321;
-            font-size: x-large;
             font-family: "Marcellus", serif;
         }
 
@@ -101,19 +109,9 @@
             font-family: "Marcellus", serif;
         }
 
-        form {
-            display: flex;
-            margin: auto;
-            margin-block: 30px;
-            width: min(300px, 90vw);
-            gap: 15px;
-            flex-wrap: wrap;
-            font-family: "Marcellus", serif;
-            color: black;
-        }
-
         form input,
-        form button {
+        form button,
+        form .sso {
             all: unset;
             padding: 10px;
             border-radius: 15px;
@@ -121,12 +119,10 @@
             box-shadow: 0 10px 30px #0005;
             border: 1px solid #71717188;
             transition: background-image 0.5s, opacity .5s, border .5s;
-
+            max-width: 500px;
+            margin: 10px 0;
         }
 
-        form * {
-            width: 100% !important;
-        }
 
         form input {
             color: black;
@@ -324,29 +320,27 @@
     </nav>
 
 
-    <div class="container">
-        <header>
-            <div class="logo mt-2 mb-3">
+    <div class="container mt-5">
+        <form action="" class="form-section text-center w-75 m-auto justify-content-center">
+            <div class="logo mt-2 mb-1">
                 <a class="brand-name" href="index.html"><span class="origami">Origami</span>ForAll</a>
             </div>
-            <h1 class="mb-3">Hi, welcome back!</h1>
+            <h1 class="mb-3 fs-2">Hi, welcome back!</h1>
             <p class="para-1">First time here? <a href="Sign Up.html" class="text-decoration-none">Sign up for free</a>
             </p>
-        </header>
-        <form action="">
 
-            <input type="email" name="email" placeholder="Your email" required>
+            <input type="email" name="email" placeholder="Your email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
 
             <input type="password" name="password" placeholder="Password" minlength="6" required>
-            <p class="text-center">Password must be at least 6 characters</p>
+            <p class="text-center fs-6">Password must be at least 6 characters</p>
 
-            <button onclick="showAlert()" type="submit">Sign in</button>
+            <button onclick="showAlert()" type="submit">Login</button>
 
-            <p class="">Sign in using magic link</p>
+            <p class="magic-link">Login using magic link</p>
             <div class="or mb-3">or</div>
             <button class="sso" type="button"><a href="Login In(phone).html"
                     class="text-decoration-none text-dark">Login with phone number</a></button>
-            <p>
+            <p class="mt-3 fs-6 w-75">
                 You acknowledge that you read, and agree, to our <a href="Private Policy.html"
                     class="text-decoration-none fw-bold">Terms of Service</a> and our <a href="Private Policy.html"
                     class="text-decoration-none fw-bold">Privacy Policy</a>.
@@ -358,7 +352,8 @@
 
         <ul class="social-links d-flex flex-wrap">
             <li><a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
             <li><a href="http://twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
             <li><a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
             <li><a href="http://tiktok.com/" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
@@ -374,9 +369,9 @@
     </footer>
 
     <script>
-        
+
         function showAlert() {
-            alert("Welcome back! You have logged in successfully.");
+            alert("✅ Login Successful!");
         }
 
     </script>

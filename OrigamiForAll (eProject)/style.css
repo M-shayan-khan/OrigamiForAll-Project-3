@@ -23,6 +23,7 @@ body {
 .drop-down li {
     display: inline-block;
     position: relative;
+
 }
 
 .drop-down li a {
@@ -30,10 +31,11 @@ body {
     padding: 10px 5px;
     color: white;
     text-align: center;
-    font-size: 15px;
+    font-size: 17px;
     width: 80%;
-    font-weight: 500;
+    font-weight: bold;
     transition: 0.3s;
+    font-family: "Marcellus", serif;
 }
 
 .drop-down li a:hover {
@@ -156,15 +158,13 @@ ul li:hover ul.drop-down {
     text-align: center;
     padding: 20px;
     color: black;
+    text-align: justify;
 }
 
 .images img {
-    margin-top: 30px;
-}
-
-.first-text {
-    width: 65%;
-    margin: auto;
+    margin-top: 50px;
+    width: 200px;
+    margin-bottom: 50px;
 }
 
 .para-1,
@@ -212,7 +212,7 @@ ul li:hover ul.drop-down {
 .image-02 img,
 .steps img {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     height: auto;
     margin: auto;
     display: block;
@@ -228,7 +228,7 @@ ul li:hover ul.drop-down {
     background-color: #fff5eb;
     border: none;
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
     margin: auto;
     color: black;
 }
@@ -248,7 +248,7 @@ ul li:hover ul.drop-down {
     .p02,
     .p03,
     .p04 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .images img {
@@ -272,7 +272,7 @@ ul li:hover ul.drop-down {
     }
 
     .first-text {
-        width: 80%;
+        width: 100%;
     }
 
     .steps img {
@@ -288,13 +288,13 @@ ul li:hover ul.drop-down {
         background-color: #fff5eb;
         border: none;
         width: 100%;
-        max-width: 125px;
+        max-width: 100px;
         margin: auto;
     }
 
     .cards {
         flex-wrap: wrap;
-        gap: 9px;
+        gap: 20px;
     }
 
 
@@ -321,7 +321,7 @@ ul li:hover ul.drop-down {
     .p02,
     .p03,
     .p04 {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
 
     .steps-btn a {
@@ -337,8 +337,8 @@ ul li:hover ul.drop-down {
     }
 
     .images img {
-        height: 65px;
-        width: 65px;
+        height: 100px;
+        width: 100px;
 
     }
 
@@ -351,24 +351,28 @@ ul li:hover ul.drop-down {
         background-color: #fff5eb;
         border: none;
         width: 100%;
-        max-width: 120px;
+        max-width: 90px;
         margin: auto;
     }
 
     .cards {
         flex-wrap: wrap;
-        gap: 2px;
+        gap: 9px;
     }
 
     .card-title {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .btn {
         height: 40px;
-        width: 70px;
+        width: 60px;
         font-size: 10px;
         justify-content: center;
+    }
+
+    .steps img {
+        width: 100%;
     }
 }
 

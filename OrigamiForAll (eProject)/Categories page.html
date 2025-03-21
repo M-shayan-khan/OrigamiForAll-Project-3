@@ -38,9 +38,10 @@
         font-weight: bold;
         transition: 0.3s;
         font-size: 1.7rem;
-        margin-top: 40px;
+        margin-top: 50px;
         list-style: none;
         margin-right: 40px;
+        padding: 10px;
     }
 
     header .categories a {
@@ -55,6 +56,19 @@
         font-size: 1.2rem;
     }
 
+    @media (max-width: 768px) {
+        header .categories li {
+            font-size: 1.5rem;
+            margin-right: 20px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        header .categories li a {
+            margin: 0 -2px 0 0px;
+            font-size: 1.1rem;
+        }
+    }
 
 </style>
 
@@ -97,8 +111,7 @@
                                 <li><a href="Categories page.html#objects" class="text-decoration-none">Objects</a></li>
                                 <li><a href="Categories page.html#fishes" class="text-decoration-none">Fishes</a></li>
                                 <li><a href="Categories page.html#hearts" class="text-decoration-none">Hearts</a></li>
-                                <li><a href="Categories page.html#foods" class="text-decoration-none">Food And
-                                        Drinks</a></li>
+                                <li><a href="Categories page.html#foods" class="text-decoration-none">Food</a></li>
                                 <li><a href="Categories page.html#dinosaurs" class="text-decoration-none">Dinosaurs</a>
                                 </li>
                             </ul>
@@ -118,29 +131,33 @@
         <p class="h2-1 mt-4">Looking for a craft to help you unwind? Learn how to make easy origami! With just a few
             simple folds, you can create beautiful paper models that are perfect for a relaxing break from the hustle
             and bustle of daily life.</p>
-        <p class="h2-1 mt-4">We’ve put together some simple origami projects that are ideal for beginners. From the famous traditional
+        <p class="h2-1 mt-4">We’ve put together some simple origami projects that are ideal for beginners. From the
+            famous traditional
             cranes to lovely paper flowers, there’s something here for everyone.</p>
-        <p class="h2-1 mt-4 mb-5">Grab some paper and start exploring our collection of origami tutorials. Our step-by-step guides are easy to
+        <p class="h2-1 mt-4 mb-5">Grab some paper and start exploring our collection of origami tutorials. Our
+            step-by-step guides are easy to
             follow, so you’ll be folding beautiful designs in no time!</p>
-<hr>
-        <header>
+        <header >
             <h1 class="mt-5">Categories:</h1>
             <nav>
-                <ul class="categories mb-5">
+                <div>
+                <ul class="categories d-flex justify-content-center">
                     <li><a href="#faces" class="text-decoration-none ">Faces</a></li>
                     <li><a href="#animals" class="text-decoration-none">Animals</a></li>
                     <li><a href="#birds" class="text-decoration-none">Birds</a></li>
                     <li><a href="#flowers" class="text-decoration-none">Flowers</a></li>
                     <li><a href="#insects" class="text-decoration-none">Insects</a></li>
+                </ul>
+                <ul class="categories mb-5 d-flex justify-content-center">
                     <li><a href="#objects" class="text-decoration-none">Objects</a></li>
                     <li><a href="#fishes" class="text-decoration-none">Fishes</a></li>
                     <li><a href="#hearts" class="text-decoration-none">Hearts</a></li>
-                    <li><a href="#food" class="text-decoration-none">Food And Drinks</a></li>
+                    <li><a href="#food" class="text-decoration-none">Food</a></li>
                     <li><a href="#dinosaurs" class="text-decoration-none">Dinosaurs</a></li>
                 </ul>
             </nav>
         </header>
-<hr>
+        <hr>
         <main class="categories-names">
             <section id="faces">
                 <h2 class="mt-5">- Origami Faces -</h2>
@@ -459,7 +476,8 @@
 
         <ul class="social-links d-flex flex-wrap">
             <li><a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
             <li><a href="http://twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
             <li><a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
             <li><a href="http://tiktok.com/" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
